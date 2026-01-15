@@ -24,24 +24,15 @@ header {
   z-index: 100;
 }
 
-/* ===== NAV (HORIZONTAL DI DESKTOP & HP) ===== */
 nav {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  padding: 0 10px;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-nav::-webkit-scrollbar {
-  display: none;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .tab-button {
-  flex: 0 0 auto;
-  white-space: nowrap;
-  padding: 10px 28px;
+  padding: 10px 30px;
   border-radius: 12px;
   border: 2px solid black;
   background: #fff;
@@ -200,26 +191,88 @@ footer {
   color: #dca3a3;
 }
 
-/* ===== MOBILE FINE TUNE ===== */
-@media (max-width: 576px) {
-
-  .page {
-    padding: 20px 12px;
-  }
-
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
   .about-text {
     text-align: center;
   }
 
-  .profile-img {
-    max-width: 220px;
-  }
-
-  .about-text h1 {
-    font-size: 20px;
-  }
-
-  .about-text p {
-    font-size: 14px;
+  .tab-button {
+    width: 100%;
+    max-width: 260px;
   }
 }
+/* ============================= */
+/* FIX TOTAL UNTUK MOBILE */
+/* ============================= */
+@media (max-width: 576px) {
+
+    /* HEADER */
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .tab-button {
+      width: 90%;
+      max-width: 300px;
+      padding: 8px 0;
+      font-size: 14px;
+      border-radius: 8px;
+    }
+  
+    /* PAGE */
+    .page {
+      padding: 20px 12px;
+    }
+  
+    /* ABOUT */
+    .about-container {
+      gap: 20px;
+    }
+  
+    .profile-img {
+      max-width: 220px;
+    }
+  
+    .about-text h1 {
+      font-size: 20px;
+    }
+  
+    .about-text p {
+      font-size: 14px;
+    }
+  
+    /* INFO BOX */
+    .info-box {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .info-box div {
+      width: 100%;
+    }
+  
+    /* GALLERY */
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    /* VIDEO */
+    .video-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .video-container video {
+      max-height: 220px;
+      object-fit: cover;
+    }
+  
+    /* FOOTER */
+    footer {
+      font-size: 13px;
+      padding: 12px;
+    }
+  }
+  
