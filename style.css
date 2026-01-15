@@ -202,3 +202,76 @@ footer {
     max-width: 260px;
   }
 }
+/* ============================= */
+/* FIX TOTAL UNTUK MOBILE */
+/* ============================= */
+@media (max-width: 576px) {
+
+    /* HEADER */
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .tab-button {
+      width: 90%;
+      max-width: 320px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    /* PAGE */
+    .page {
+      padding: 20px 12px;
+    }
+  
+    /* ABOUT */
+    .about-container {
+      gap: 20px;
+    }
+  
+    .profile-img {
+      max-width: 220px;
+    }
+  
+    .about-text h1 {
+      font-size: 20px;
+    }
+  
+    .about-text p {
+      font-size: 14px;
+    }
+  
+    /* INFO BOX */
+    .info-box {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .info-box div {
+      width: 100%;
+    }
+  
+    /* GALLERY */
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    /* VIDEO */
+    .video-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .video-container video {
+      max-height: 220px;
+      object-fit: cover;
+    }
+  
+    /* FOOTER */
+    footer {
+      font-size: 13px;
+      padding: 12px;
+    }
+  }
+  
