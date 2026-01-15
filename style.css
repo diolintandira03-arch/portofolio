@@ -215,10 +215,11 @@ footer {
     }
   
     .tab-button {
-      width: 50%;
-      max-width: 320px;
-      padding: 10px;
+      width: 90%;
+      max-width: 300px;
+      padding: 8px 0;
       font-size: 14px;
+      border-radius: 8px;
     }
   
     /* PAGE */
